@@ -1,0 +1,41 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="Page not found">
+  <main class="flex flex-1 items-center">
+    <div class="mx-auto w-full max-w-5xl px-5 py-16 sm:px-6 sm:py-20">
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <p
+            class="font-extrabold leading-none tracking-tighter text-ink"
+            style="font-size: clamp(6rem, 18vw, 12rem);"
+          >
+            404
+          </p>
+          <h1 class="mt-4 text-2xl font-bold tracking-tight text-ink sm:text-3xl">Page not found</h1>
+          <p class="mt-4 max-w-sm text-[16px] leading-relaxed text-muted">
+            Looks like you're lost. Let's get you back on track.
+          </p>
+          <a
+            href="/"
+            class="mt-8 inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-2.5 text-sm font-medium text-page transition-colors hover:bg-ink-soft"
+          >
+            Back to home
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="/illustrations/lion-404.png"
+            alt="Line drawing of a sitting lion"
+            class="w-full max-w-xs sm:max-w-sm"
+            width="400"
+            height="400"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

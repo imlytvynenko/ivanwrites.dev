@@ -1,0 +1,43 @@
+---
+import Layout from '../components/Layout.astro';
+
+const socials = [
+  { label: 'GitHub', href: 'https://github.com' },
+  { label: 'LinkedIn', href: 'https://linkedin.com' },
+  { label: 'X', href: 'https://x.com' },
+];
+---
+
+<Layout title="About" description="A little about Ivan.">
+  <main class="mx-auto w-full max-w-3xl flex-1 px-5 py-12 sm:px-6 sm:py-16">
+    <h1 class="text-3xl font-bold tracking-tight text-ink sm:text-4xl">About</h1>
+
+    <div class="prose mt-6">
+      <p>
+        Hi, I'm Ivan — a software developer who cares as much about how we live as how we build. This is my corner of the internet for thinking out loud.
+      </p>
+      <p>
+        I write about software development, running, travel, and the small habits that make everyday life a little better. Most posts start as notes to myself and end up here once they're useful enough to share.
+      </p>
+      <h2>What I'm about</h2>
+      <p>
+        Building calm, durable software. Running slow and often. Traveling light. Keeping tools simple so the work stays fun.
+      </p>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      {
+        socials.map(({ label, href }) => (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-lg border border-border px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-faint"
+          >
+            {label}
+          </a>
+        ))
+      }
+    </div>
+  </main>
+</Layout>

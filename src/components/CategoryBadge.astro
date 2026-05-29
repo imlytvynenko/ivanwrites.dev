@@ -1,0 +1,30 @@
+---
+export interface Props {
+  category: 'Software Development' | 'Lifestyle';
+  variant?: 'label' | 'pill';
+}
+
+const { category, variant = 'label' } = Astro.props;
+
+const labelColor = {
+  'Software Development': 'text-blue',
+  Lifestyle: 'text-green',
+};
+
+const pillColor = {
+  'Software Development': 'bg-blue-soft text-blue',
+  Lifestyle: 'bg-green-soft text-green',
+};
+---
+
+{
+  variant === 'pill' ? (
+    <span class:list={['inline-flex rounded-full px-3 py-1 text-[13px] font-medium', pillColor[category]]}>
+      {category}
+    </span>
+  ) : (
+    <span class:list={['text-[12px] font-semibold uppercase tracking-wide', labelColor[category]]}>
+      {category}
+    </span>
+  )
+}

@@ -1,0 +1,36 @@
+---
+import Layout from '../components/Layout.astro';
+
+const now = [
+  { label: 'Reading', value: 'Atomic Habits' },
+  { label: 'Training for', value: 'A half marathon' },
+  { label: 'Working on', value: 'ivanwrites.dev' },
+  { label: 'Learning', value: 'A bit of Portuguese' },
+];
+---
+
+<Layout title="Now" description="What Ivan is focused on right now.">
+  <main class="mx-auto w-full max-w-3xl flex-1 px-5 py-12 sm:px-6 sm:py-16">
+    <div class="flex items-center gap-2.5">
+      <h1 class="text-3xl font-bold tracking-tight text-ink sm:text-4xl">Now</h1>
+      <span class="h-2.5 w-2.5 rounded-full bg-green" aria-label="Active"></span>
+    </div>
+    <p class="mt-3 text-[16px] leading-relaxed text-muted">
+      A snapshot of what I'm focused on at the moment. Inspired by
+      <a href="https://nownownow.com/about" class="text-blue underline underline-offset-2">nownownow.com</a>.
+    </p>
+
+    <dl class="mt-10 divide-y divide-border border-y border-border">
+      {
+        now.map(({ label, value }) => (
+          <div class="flex items-center justify-between gap-4 py-4">
+            <dt class="text-[12px] font-semibold uppercase tracking-wide text-faint">{label}</dt>
+            <dd class="text-[16px] font-medium text-ink">{value}</dd>
+          </div>
+        ))
+      }
+    </dl>
+
+    <p class="mt-8 text-[14px] text-faint">Last updated May 2026.</p>
+  </main>
+</Layout>

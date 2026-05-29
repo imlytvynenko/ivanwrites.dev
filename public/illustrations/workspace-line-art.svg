@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" fill="none" stroke="#3f3f46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Line drawing of a desk with a plant, laptop, and coffee mug">
+  <!-- desk -->
+  <path d="M40 286 H420" />
+  <!-- plant -->
+  <path d="M150 264 H206" />
+  <path d="M156 264 L162 286 H194 L200 264" />
+  <path d="M178 264 V214" />
+  <path d="M178 252 C162 246 151 232 153 214 C170 222 179 238 178 252 Z" />
+  <path d="M178 252 C194 246 205 232 203 214 C186 222 177 238 178 252 Z" />
+  <path d="M178 238 C168 228 164 212 170 198 C181 209 183 224 178 238 Z" />
+  <path d="M178 238 C188 228 192 212 186 198 C175 209 173 224 178 238 Z" />
+  <!-- laptop -->
+  <rect x="250" y="206" width="120" height="66" rx="6" />
+  <circle cx="310" cy="239" r="7" />
+  <path d="M244 272 H376 L388 286 H232 Z" />
+  <path d="M250 286 H370" />
+  <!-- mug -->
+  <rect x="392" y="262" width="34" height="26" rx="6" />
+  <path d="M426 268 a8 8 0 0 1 0 14" />
+  <path d="M400 256 q4 -5 0 -10" />
+  <path d="M412 256 q4 -5 0 -10" />
+</svg>
